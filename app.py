@@ -42,3 +42,7 @@ def transform_text(input_text):
     preprocessed_text = preprocess_text(input_text)
     transformed_text = tfidf_vectorizer.transform([preprocessed_text])
     return transformed_text
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
